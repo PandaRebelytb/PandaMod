@@ -29,7 +29,7 @@ displayName="PandaMod" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks to 9e_Docteur for his tuto videos!" #optional
+credits="Thanks to 9e_Docteur for his tuto videos! I love this men!" #optional
 # A text field displayed in the mod UI
 authors="PandaRebel4307 & 9e_Docteur." #optional
 # Display Test controls the display for your mod in the server connection screen
