@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "pandamod: block/halfinum_block"
+    "all": "pandamod:block/halfinum_block"
   }
 }
