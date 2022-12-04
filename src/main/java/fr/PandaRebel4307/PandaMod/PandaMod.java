@@ -1,6 +1,7 @@
 package fr.PandaRebel4307.PandaMod;
 
 import com.mojang.logging.LogUtils;
+import fr.PandaRebel4307.PandaMod.block.PandaBlock;
 import item.pandaitem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
@@ -41,7 +42,7 @@ public class PandaMod
         modEventBus.addListener(this::commonSetup);
 
         pandaitem.register(modEventBus);
-
+        PandaBlock.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
     public void commonSetup(final FMLCommonSetupEvent event){
