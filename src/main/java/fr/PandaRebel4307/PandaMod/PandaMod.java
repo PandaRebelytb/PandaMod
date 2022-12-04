@@ -1,6 +1,7 @@
 package fr.PandaRebel4307.PandaMod;
 
 import com.mojang.logging.LogUtils;
+import item.pandaitem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -33,12 +34,18 @@ public class PandaMod
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public PandaMod()
-    {
+    public PandaMod() {
+
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        modEventBus.addListener(this::commonSetup);
+
+        pandaitem.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
+    }
+    public void commonSetup(final FMLCommonSetupEvent event){
+
     }
 }
 
